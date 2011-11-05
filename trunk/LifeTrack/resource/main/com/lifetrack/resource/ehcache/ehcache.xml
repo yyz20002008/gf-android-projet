@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+	
+	<defaultCache maxElementsInMemory="500" overflowToDisk="false" eternal="false"
+		memoryStoreEvictionPolicy="LRU" timeToIdleSeconds="600"
+		timeToLiveSeconds="1800"/>
+
+	<cache name="nameMapCache" maxElementsInMemory="1000" overflowToDisk="false"
+		eternal="false" memoryStoreEvictionPolicy="LRU" timeToLiveSeconds="21600"/>
+		
+	<cache name="ConstantBufCache" maxElementsInMemory="1000" overflowToDisk="false"
+		eternal="false" memoryStoreEvictionPolicy="LRU" timeToLiveSeconds="86400"/>
+		
+</ehcache>

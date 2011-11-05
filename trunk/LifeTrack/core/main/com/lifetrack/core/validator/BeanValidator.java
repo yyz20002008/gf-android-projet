@@ -15,7 +15,7 @@ import com.lifetrack.utils.LogUtils;
 
 
 
-@Component
+
 public class BeanValidator {
 	private static final Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
 	private static final Logger logger = LoggerFactory.getLogger(BeanValidator.class);
