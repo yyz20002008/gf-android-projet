@@ -54,7 +54,7 @@
 		<property name="maxIdleTime" value="${jdbc.maxIdleTime}" />
 	</bean>
     
-    <bean id="hibernateInterceptor" class="com.lifetrack.core.dao.HibernateInterceptor" />
+    
     
     
     <!-- hibernate sessionFactory 创建 -->   
@@ -75,7 +75,6 @@
 				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
 				<prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
 				<prop key="hibernate.cache.use_second_level_cache">false</prop>
-				<prop key="javax.persistence.validation.mode">none</prop>
 				<!-- TODO：后期再重新审查相关设置。 
 					<prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop> 
 					<prop key="hibernate.cache.provider_configuration_file_resource_path">${hibernate.ehcache_config_file}</prop> 
